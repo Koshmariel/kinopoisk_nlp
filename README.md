@@ -5,6 +5,12 @@
 Размер словаря ограничен 3.000 наиболее часто встречающимися в обзорах словами.
 При обучении используется уменьшение коэфициента обучения если уменьшениие loss не происходит в течении 2 эпох.
 Результаты, с моей точки зрения, получились не плохими. При намного меньшем объёме тренировочных данных (10.000 против 50.000 у IMDB) в своих оценках нейросеть ошибается в среднем на 1 балл.
+Файлы:
+review_rating.py - основной скрипт
+combine.py - служебный скрипт, объединяющий все обзоры из папки \data в один файл combined_reviews.csv
+\data\combined_reviews.zip - архив, содержащий данные combined_reviews.csv
+\data\scrapper.py - веб-скреппер для загрузки обзоров
+
 
 This artificial neural network was inspired by the famous IMDB movie review dataset. I thought that classification into positive/negative categories is to boring that's why ANN is rating reviews on 10 point scale.
 As training and testing dataset I took movie review base from kinopoisk.ru. While kinopoisk as IMDB classifies reviews only by positive/neutral/negative categories many authors include 10 point scale rating in their reviews. To download the dataset I made web-scrapper scrapper.py which takes reviews consisting of 150 or more character including rate in the form of  “n out of 10”. To avoid capcha scrapper uses free proxies by automatically downloading their lists.
@@ -13,3 +19,8 @@ Review texts are cleaned form irrelevant words. Then the words are reduced to th
 Vocabulary size is limited to 3000 words most frequently used in reviews.
 During training learning rate reduction callback is implemented if loss is not reduced for more than 2 epochs.
 Results are not bad. While using much smaller training dataset (10k against IMDB 50k) the average error is around 1 point.
+Files:
+review_rating.py - main script
+combine.py - service script, combines all reviews from \data folder into 1 file combined_reviews.csv
+\data\combined_reviews.zip - archive with the dataset combined_reviews.csv
+\data\scrapper.py - web-scrapper to download reviews
