@@ -8,8 +8,12 @@
 Файлы:
 review_rating.py - основной скрипт
 combine.py - служебный скрипт, объединяющий все обзоры из папки \data в один файл combined_reviews.csv
+model.json - архитетура нейросети
+models_e20_l2.70 - параметры нейросети
+vocabulary.pkl - словарь
 \data\combined_reviews.zip - архив, содержащий данные combined_reviews.csv
 \data\scrapper.py - веб-скреппер для загрузки обзоров
+
 
 
 This artificial neural network was inspired by the famous IMDB movie review dataset. I thought that classification into positive/negative categories is to boring that's why ANN is rating reviews on 10 point scale.
@@ -22,5 +26,8 @@ Results are not bad. While using much smaller training dataset (10k against IMDB
 Files:
 review_rating.py - main script
 combine.py - service script, combines all reviews from \data folder into 1 file combined_reviews.csv
+model.json - ANN architecture
+models_e20_l2.70 - ANN parameters 
+vocabulary.pkl - vocabulary
 \data\combined_reviews.zip - archive with the dataset combined_reviews.csv
 \data\scrapper.py - web-scrapper to download reviews
