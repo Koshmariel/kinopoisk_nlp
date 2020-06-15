@@ -11,7 +11,7 @@
 
 Файлы:
 
-review_rating.py - основной скрипт
+reviews.ipynb - основной скрипт
 
 combine.py - служебный скрипт, объединяющий все обзоры из папки \data в один файл combined_reviews.csv
 
@@ -41,7 +41,7 @@ During training learning rate reduction callback is implemented if loss is not r
 Results are not bad. While using much smaller training dataset (10k against IMDB 50k) the average error is around 1 point.
 Files:
 
-review_rating.py - main script
+reviews.ipynb - main script
 
 combine.py - service script, combines all reviews from \data folder into 1 file combined_reviews.csv
 
