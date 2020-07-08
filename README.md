@@ -27,7 +27,7 @@ vocabulary.pkl - словарь
 
 
 
-This artificial neural network was inspired by the famous IMDB movie review dataset. I thought that classification into positive/negative categories is to boring that's why ANN is rating reviews on 10 point scale.
+This artificial neural network was inspired by the famous IMDB movie review dataset. I thought that classification into positive/negative categories is to boring that is why this ANN is rating reviews on 10 point scale.
 
 As training and testing dataset I took movie review base from kinopoisk.ru. While kinopoisk as IMDB classifies reviews only by positive/neutral/negative categories many authors include 10 point scale rating in their reviews. To download the dataset I made web-scrapper scrapper.py which takes reviews consisting of 150 or more character including rate in the form of  “n out of 10”. To avoid capcha scrapper uses free proxies by automatically downloading their lists.
 
